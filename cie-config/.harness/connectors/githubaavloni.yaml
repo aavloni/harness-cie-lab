@@ -1,0 +1,23 @@
+connector:
+  name: github-aavloni
+  identifier: githubaavloni
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampciakmal
+  type: Github
+  spec:
+    url: https://github.com/aavloni
+    validationRepo: nginxHelloWorld
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: aavloni
+          tokenRef: aavlonigit
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: aavlonigit
+    executeOnDelegate: true
+    type: Account
